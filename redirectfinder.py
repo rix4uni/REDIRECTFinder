@@ -9,7 +9,7 @@ from urllib.parse import urlparse
 
 # Parse the command-line arguments
 parser = argparse.ArgumentParser()
-parser.add_argument("--threads", type=int, default=8, help="number of threads to use")
+parser.add_argument("-t", "--threads", type=int, default=8, help="number of threads to use")
 args = parser.parse_args()
 
 # Read the input URLs from sys.stdin
